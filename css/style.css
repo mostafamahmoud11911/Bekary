@@ -1,0 +1,304 @@
+body {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alegreya", serif;
+}
+p {
+  line-height: 1.8;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.section {
+  padding: 3rem 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999999999999999;
+  background-color: transparent;
+}
+.navbar ul li {
+  padding: 0 10px !important;
+}
+.navbar ul li a {
+  color: #fff !important;
+  transition: color 0.3s;
+}
+.navbar ul li a.active {
+  color: #e0dcd2 !important;
+}
+.navbar ul li a:hover {
+  color: #bdbb89 !important;
+}
+
+.home {
+  height: 100vh;
+  background-image: url(../images/drew-coffman-1872.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  .navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    border-color: #fff !important;
+  }
+  .navbar-toggler {
+    border-color: #fff !important;
+  }
+  .navbar-brand img {
+    width: 120px !important;
+  }
+  .navbar ul {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .navbar ul li a {
+    color: #333 !important;
+    padding: 10px 15px !important;
+  }
+  .navbar ul li a.active,
+  .navbar ul li a:hover {
+    color: #333 !important;
+  }
+}
+.home .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .layer .content h1 {
+  font-size: 80px;
+}
+.home .layer .content .btn {
+  color: #fff;
+  padding: 15px 25px;
+  margin: 0 5px;
+}
+.home .layer .content .btn-learn {
+  border: 2px solid #8e7754;
+  background-color: #8e7754;
+}
+.home .layer .content .btn-cont {
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.home .layer .content .btn:hover {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+}
+@media (max-width: 1000px) {
+  .home .layer .content h1 {
+    font-size: 50px;
+    padding: 10px 0 !important;
+  }
+  .home .layer .content p {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 768px) {
+  .home .layer .content p {
+    font-size: 15px !important;
+    padding: 0 3px;
+  }
+  .home .layer .content .btn {
+    margin-top: 20px !important;
+  }
+}
+/* ******************end home************************* */
+
+/* *******************start about********************** */
+#about .item-text p {
+  line-height: 1.8;
+}
+#about .item-text .icon-list li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#about .item-text .icon-list span {
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .item-text .icon-list i {
+  color: #8e7754;
+  font-size: 19px;
+}
+@media (max-width: 767px) {
+  .item-img div {
+    padding: 0 !important;
+  }
+  #about .item-text {
+    padding: 40px 0;
+  }
+}
+/* *******************end about********************** */
+/* **************start location******************* */
+#location {
+  background-color: #f8f8f8;
+}
+/* location */
+@media (max-width: 767px) {
+  .location-img div {
+    padding: 0 !important;
+  }
+  #location .location-item {
+    padding-bottom: 40px !important;
+  }
+}
+/* **************end location******************* */
+/* **************start contact********************* */
+#contact {
+  background-color: #f8f8f8;
+}
+
+#contact .contact-details li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#contact .contact-details li span {
+  width: 40px;
+  height: 40px;
+  background-color: #8e7754;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* *****************end contact********************* */
+/* *******************start footer**************** */
+#footer {
+  background-color: #353330;
+}
+#footer .footer-main {
+  background-color: #403d38;
+  padding: 45px 0;
+}
+#footer .footer-main .special ul li {
+  padding: 10px 15px;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+#footer .footer-main .special ul li:last-child {
+  border: 0;
+}
+#footer .footer-main .special ul li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border: 5px solid #fff;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.09);
+  transform: translateY(-50%);
+}
+#footer .footer-main .details {
+  color: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+#footer .footer-main .details::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../images/contact-details-map.png);
+  opacity: 0.2;
+}
+#footer .footer-main .details i {
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer-bottom {
+  background-color: #353330;
+  padding: 50px 0;
+}
+.footer-bottom span {
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+.footer-bottom span i {
+  padding-top: 10px;
+}
+.footer-bottom span {
+  transition: 0.3s;
+}
+.footer-bottom .face:hover {
+  background-color: #3b5998 !important;
+  color: #fff !important;
+}
+.footer-bottom .goo:hover {
+  background-color: #dd4b39 !important;
+  color: #fff !important;
+}
+.footer-bottom .link:hover {
+  background-color: #007bb5 !important;
+  color: #fff !important;
+}
+.footer-bottom .twit:hover {
+  background-color: #00aced !important;
+  color: #fff !important;
+}
+/* *******************end footer******************* */
+
+.optionBox {
+  background-color: tomato;
+  z-index: 900;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  display: flex;
+}
+
+.color-box {
+  background-color: #00aced;
+}
+
+.color-box ul li{
+  width: 30px;
+  height: 30px;
+background-color: transparent;
+}
+
+#toggleBtn {
+  background-color: #353330;
+  padding: .5rem;
+  font-size: 25px;
+  color: #fff;
+}
